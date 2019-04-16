@@ -13,6 +13,7 @@ expr :       expr operator expr
            | identifier
            | constnumber
            | string
+           | char
            | forStatement
            | repeat
            ;
@@ -25,7 +26,7 @@ loopStatement:   WHILEnumber condition expr+ #while
                | LOOPnumber expr+ ENDLOOPnumber #loop ;
 
 //If-Statement
-ifStatement:  IFnumber condition THENnumber expr+ (ELSEnumber (block|expr+)) ENDIFnumber
+ifStatement:  IFnumber condition THENnumber expr+ ELSEnumber (block|expr+) ENDIFnumber
              |IFnumber condition THENnumber expr+ ENDIFnumber;
 
 //Condition
@@ -56,7 +57,10 @@ identifier: IDnumber;
 declare: VARnumber expr SEMInumber;
 
 //String
-string: '(*' expr '*)';
+string: '(*' expr+ '*)'
+        | '\'' expr+ '\'';
+char:   '\'' expr '\'' ;
+
 
 //for
 forStatement: FORnumber COLEQnumber expr TOnumber constnumber 'do' expr+
