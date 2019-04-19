@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="82921de3-a289-4b6b-8fd4-f32c34061d0b" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PASC.g4" beforeDir="false" afterPath="$PROJECT_DIR$/PASC.g4" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Report.docx" beforeDir="false" afterPath="$PROJECT_DIR$/Report.docx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,17 +14,7 @@
     <favorites_list name="PASC_ParseTree" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/PASC.g4">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="7">
-              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -51,18 +39,8 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="PASC_AST" type="b2602c69:ProjectViewProjectNode" />
-              <item name="PASC_AST" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
       <pane id="PackagesPane" />
+      <pane id="ProjectPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -72,7 +50,7 @@
     <property name="$PROJECT_DIR$/pascal.g4::/auto-gen" value="true" />
     <property name="$PROJECT_DIR$/pascal.g4::/gen-listener" value="true" />
     <property name="$PROJECT_DIR$/pascal.g4::/gen-visitor" value="false" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555389798014" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1555427996022" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Test/Test01.txt" />
   </component>
   <component name="RunDashboard">
@@ -112,7 +90,7 @@
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.25567323" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49760765" visible="true" weight="0.2632375" />
       <window_info id="Structure" order="1" sideWeight="0.50239235" side_tool="true" weight="0.25340393" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -130,7 +108,7 @@
       <window_info anchor="bottom" id="Tool Output" order="8" weight="0.9516908" />
       <window_info anchor="bottom" id="Terminal" order="9" weight="0.32850242" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info active="true" anchor="bottom" id="ANTLR Preview" order="11" visible="true" weight="0.92431563" />
+      <window_info anchor="bottom" id="ANTLR Preview" order="11" weight="0.0547504" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -148,8 +126,8 @@
     <entry file="file://$PROJECT_DIR$/Expr.g4" />
     <entry file="file://$PROJECT_DIR$/PASC.g4">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7">
-          <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
+        <state relative-caret-position="867">
+          <caret line="51" lean-forward="true" selection-start-line="51" selection-end-line="51" />
         </state>
       </provider>
     </entry>
