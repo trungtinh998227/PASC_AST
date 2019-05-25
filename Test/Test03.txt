@@ -1,0 +1,6 @@
+var x;
+var y;
+begin
+	x := 1.3E-10;
+	y := x;
+end.

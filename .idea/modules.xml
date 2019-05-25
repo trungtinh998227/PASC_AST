@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/PASC_ParseTree.iml" filepath="$PROJECT_DIR$/.idea/PASC_ParseTree.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PASC_AST.iml" filepath="$PROJECT_DIR$/PASC_AST.iml" />
+      <module fileurl="file://$PROJECT_DIR$/target/generated-sources/generated-sources.iml" filepath="$PROJECT_DIR$/target/generated-sources/generated-sources.iml" />
     </modules>
   </component>
 </project>

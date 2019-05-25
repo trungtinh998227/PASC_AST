@@ -1,0 +1,17 @@
+var c, d, e;
+if n <= 1 then
+				fibResult := n
+			else
+			begin
+				i := 2;
+				while i <= n do
+				begin
+					write a;
+					tmp := a + b;
+					a := b;
+					b := tmp;
+					i := i + 1
+				end;
+				
+				fibResult := a
+			end

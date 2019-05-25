@@ -2,12 +2,15 @@ grammar PASC;
 
 program: PROGRAMnumber expr SEMInumber declare block;
 
-expr :       expr operator expr
+expr :
+             program
+           | declare
+           | expr operator expr
            | expr assign
            | paren
            | constvalue
            | expr COMMAnumber expr
-           | declare
+           | block
            | ifStatement
            | loopStatement
            | identifier
@@ -19,16 +22,18 @@ expr :       expr operator expr
            ;
 
 //Block
-block: BEGINnumber expr+ ENDnumber;
+block: BEGINnumber expr+ ENDnumber DOTnumber
+       | BEGINnumber expr+ ENDnumber;
 
 //Loop-Statment
 loopStatement:   WHILEnumber condition expr+ #while
                | LOOPnumber expr+ ENDLOOPnumber #loop ;
 
 //If-Statement
-ifStatement:  IFnumber condition THENnumber expr+ ELSEnumber (block|expr+) ENDIFnumber
-             |IFnumber condition THENnumber expr+ ENDIFnumber;
-
+ifStatement:      IFnumber condition THENnumber expr+ ELSEnumber (block|expr+) ENDIFnumber
+                | IFnumber condition THENnumber RETURNnumber expr+ ELSEnumber (block|expr+) ENDIFnumber
+                | IFnumber condition THENnumber RETURNnumber expr+ ELSEnumber RETURNnumber (expr) ENDIFnumber
+                | IFnumber condition THENnumber expr+ ENDIFnumber;
 //Condition
 condition: expr compare=(EQnumber|LEnumber|GEnumber|NEnumber) expr
            | condition ANDnumber condition
@@ -48,17 +53,18 @@ constnumber: ICONTSnumber;
 constvalue: CONSTnumber expr SEMInumber;
 
 //Paren
-paren: LPAREN expr RPAREN;
+paren: LPAREN (expr|expr+) RPAREN;
 
 //Identifier
 identifier: IDnumber;
 
 //declare-value
-declare: VARnumber expr SEMInumber;
+declare:  VARnumber expr SEMInumber
+         |VARnumber assign;
 
 //String
-string: '(*' expr+ '*)'
-        | '\'' expr+ '\'';
+string: STARTcomment expr+ ENDcomment
+        | STARTcomment expr+ ENDcomment;
 char:   '\'' expr '\'' ;
 
 
@@ -109,6 +115,8 @@ WHILEnumber     : 'while' ;
 // Literals
 ICONTSnumber    : [0-9]+;
 // Operators
+STARTcomment    : '/*';
+ENDcomment    : '*/';
 PLUSnumber      : '+' ;
 MINUSnumber     : '-' ;
 TIMESnumber     : '*' ;

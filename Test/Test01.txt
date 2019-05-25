@@ -1,17 +1,4 @@
-program Test;
-var x,y;
+var x;
 begin
-    if n <= 1 then
-        fibResult := n;
-    else
-        begin
-            i := 2;
-            while i >= n 
-                loop
-                    tmp := a + b;
-                    i := i + 1;
-                endloop
-            fibResult := a;
-        end
-    endif
-end
+    x := 2.1;
+end.
